@@ -1,0 +1,77 @@
+.fullInfo {
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #e0e4e6;
+  }
+  
+  .fullInfo h3 {
+    color: hsl(260, 8%, 14%);
+    text-align: center;
+  }
+  
+  .fullInfo p {
+    width: 15rem;
+    margin-top: 0.8rem;
+    font-size: 0.7rem;
+    text-align: center;
+    color: hsl(0, 0%, 75%);
+  }
+  
+  .frame {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    background-color: hsl(0, 0%, 100%);
+    margin-top: 6rem;
+    width: 15rem;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .frame h4 {
+    color: hsl(257, 27%, 26%);
+  }
+  
+  .frame p {
+    width: 12rem;
+  }
+  
+  .picto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 8.3rem;
+    background-color: hsl(257, 27%, 26%);
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+  }
+
+  .detailed {
+    bottom: 9.3rem;
+  }
+
+  .picto img {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .vLine {
+    height: 40rem;
+    bottom: 20rem;
+    position: absolute;
+    border: 4px solid hsl(180, 66%, 49%);
+    background-color: hsl(180, 66%, 49%);
+  }

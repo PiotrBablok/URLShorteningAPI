@@ -1,0 +1,48 @@
+.mobMenu {
+    animation:  0.4s FadeIn;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 4rem;
+    width: 16rem;
+    height: 21rem;
+    background-color: hsl(257, 27%, 26%);
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+@keyframes FadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+}
+
+.mobMenu ul {
+    list-style-type: none;
+}
+
+.mobMenu li {
+    margin: 1.5rem 0 1.5rem 0;
+    text-align: center;
+}
+
+.hr {
+    width: 14rem;
+    height: 1px;
+    background-color: hsl(257, 7%, 63%)
+}
+
+.sign {
+    width: 14rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    border: 2px solid hsl(180, 66%, 49%);
+    background-color: hsl(180, 66%, 49%);
+    border-radius: 2rem;
+}

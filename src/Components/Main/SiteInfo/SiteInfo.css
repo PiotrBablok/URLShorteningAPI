@@ -1,0 +1,13 @@
+.siteInfo {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.siteInfo p {
+    color: hsl(0, 0%, 75%);
+    font-size: 0.85rem;
+    width: 15rem;
+    text-align: center;
+}

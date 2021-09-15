@@ -1,0 +1,39 @@
+header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.siteNav {
+    display: grid;
+    width: 100%;
+    height: 25rem;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    grid-template-rows: 3.5rem 1fr;
+    background-image: url(../../images/illustration-working.svg);
+    background-repeat: no-repeat;
+    background-size: 380px auto;
+    background-position: 1rem;
+}
+
+.logo {
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    width: 80px;
+    height: 20px;
+}
+
+.menuBar {
+    grid-area: 1/2/2/3;
+    color: rgb(134, 134, 134);
+    justify-self: flex-end;
+    margin-top: 1.5rem;
+    margin-right: 1rem;
+    width: 18px;
+    transition: 0.5s;
+}
+
+.menuBar:hover {
+    transform: rotate(-90deg);
+}
+
