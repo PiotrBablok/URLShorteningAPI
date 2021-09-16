@@ -3,7 +3,7 @@
 </div>
 
 <div>
-    <h3>Work In Progress</3>
+    <h3>Work In Progress...</3>
 </div>
 
 <div>
