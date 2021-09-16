@@ -3,6 +3,10 @@
 </div>
 
 <div>
+    <h3>Work In Progress</3>
+</div>
+
+<div>
     <p>I wanted to present a project of a page which was inrteged with <b><a href="https://shrtco.de/">shrtcode API</a></b> shrtcode API to create a shortened URL address and be able to display it on the page.</p>
     <p>The main goal is for the user to be able to:</p>
     <ul>
