@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/URLShorteningAPI/static/css/main.5e1b89a9.chunk.css",
-    "main.js": "/URLShorteningAPI/static/js/main.7537e511.chunk.js",
-    "main.js.map": "/URLShorteningAPI/static/js/main.7537e511.chunk.js.map",
+    "main.css": "/URLShorteningAPI/static/css/main.f0a3a1ad.chunk.css",
+    "main.js": "/URLShorteningAPI/static/js/main.8d4113a1.chunk.js",
+    "main.js.map": "/URLShorteningAPI/static/js/main.8d4113a1.chunk.js.map",
     "runtime-main.js": "/URLShorteningAPI/static/js/runtime-main.06a35e48.js",
     "runtime-main.js.map": "/URLShorteningAPI/static/js/runtime-main.06a35e48.js.map",
     "static/js/2.0f71ce18.chunk.js": "/URLShorteningAPI/static/js/2.0f71ce18.chunk.js",
     "static/js/2.0f71ce18.chunk.js.map": "/URLShorteningAPI/static/js/2.0f71ce18.chunk.js.map",
     "index.html": "/URLShorteningAPI/index.html",
-    "static/css/main.5e1b89a9.chunk.css.map": "/URLShorteningAPI/static/css/main.5e1b89a9.chunk.css.map",
+    "static/css/main.f0a3a1ad.chunk.css.map": "/URLShorteningAPI/static/css/main.f0a3a1ad.chunk.css.map",
     "static/js/2.0f71ce18.chunk.js.LICENSE.txt": "/URLShorteningAPI/static/js/2.0f71ce18.chunk.js.LICENSE.txt",
     "static/media/bars-solid-menu.e8db7520.svg": "/URLShorteningAPI/static/media/bars-solid-menu.e8db7520.svg",
     "static/media/Back.css": "/URLShorteningAPI/static/media/bg-boost-mobile.4b04bd89.svg",
@@ -26,7 +26,7 @@
   "entrypoints": [
     "static/js/runtime-main.06a35e48.js",
     "static/js/2.0f71ce18.chunk.js",
-    "static/css/main.5e1b89a9.chunk.css",
-    "static/js/main.7537e511.chunk.js"
+    "static/css/main.f0a3a1ad.chunk.css",
+    "static/js/main.8d4113a1.chunk.js"
   ]
 }
