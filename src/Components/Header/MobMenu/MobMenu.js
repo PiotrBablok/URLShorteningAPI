@@ -15,9 +15,6 @@ const vis = {
 }
 
 const MobMenu = forwardRef((props, ref) => {
-
-
-
     return (
         <div style={(props.visible === 'hidden' ? nonVis : vis)} ref={ref} className='mobMenu'>
             <ul >

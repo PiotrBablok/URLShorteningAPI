@@ -28,11 +28,16 @@ footer li {
     margin-top: 0.3rem;
 }
 
+
 footer button {
     border: none;
     background-color: transparent;
     color: grey;
     font-size: 1rem;
+}
+
+footer button:hover {
+    cursor: pointer;
 }
 
 .social {
