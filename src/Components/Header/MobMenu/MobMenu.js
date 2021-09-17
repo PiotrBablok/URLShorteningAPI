@@ -1,9 +1,11 @@
+import React, {forwardRef} from 'react';
 
 import './MobMenu.css'
 
-function MobMenu() {
+const MobMenu = forwardRef((props,ref) => {
+
     return (
-        <div className='mobMenu'>
+        <div ref={ref} className='mobMenu'>
             <ul >
                 <li>Features</li>
                 <li>Pricing</li>
@@ -16,6 +18,6 @@ function MobMenu() {
             </ul>
         </div>
     )
-}
+})
 
 export default MobMenu;

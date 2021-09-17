@@ -1,5 +1,4 @@
 .mobMenu {
-    animation:  0.4s FadeIn;
     color: white;
     display: flex;
     flex-direction: column;
@@ -12,15 +11,23 @@
     background-color: hsl(257, 27%, 26%);
     border-radius: 10px;
     font-weight: 700;
+    animation: 0.4s FadeIn;
 }
 
 @keyframes FadeIn {
     0% {
-      opacity:0;
+        opacity: 0;
     }
     100% {
-      opacity:1;
+        opacity: 1;
     }
+}
+
+.hide {
+    visibility: visible;
+    opacity: 0;
+    max-height: 0px;
+    transition: max-height 0.3s, opacity 0.3s, visibility 0.3s linear;
 }
 
 .mobMenu ul {
