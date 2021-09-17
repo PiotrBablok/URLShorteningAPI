@@ -9,23 +9,24 @@ import './Header.css'
 
 
 function Header() {
-    const [dropMenuState, setDropMenuState] = useState(false)
+    const [dropMenuState, setDropMenuState] = useState('hidden')
 
     function showMenu(){
-        setDropMenuState(!dropMenuState);
+        if(dropMenuState === 'hidden'){
+            setDropMenuState('visible')
+        }else {
+            setDropMenuState('hidden')
+        }
     }
 
     const refMenu = useRef();
     const menuBar = useRef();
-
-    console.log(menuBar)
    
     useEffect(() => {
         document.addEventListener('mousedown', (e) => {
-            console.log(e.target)
             if(refMenu.current && !refMenu.current.contains(e.target)){
                 if(menuBar.current && !menuBar.current.contains(e.target)){
-                    setDropMenuState(false);
+                    setDropMenuState('hidden');
                 }
             }
         })
@@ -37,7 +38,7 @@ function Header() {
                 <img className='logo' src={logo} alt='logo' />
                 <img ref={menuBar} className='menuBar' onClick={showMenu} src={menu} alt='menu' />
             </nav>
-            {dropMenuState === true ?<MobMenu ref={refMenu}/>  : false}
+            <MobMenu visible={dropMenuState} ref={refMenu}/> 
         </header>
 
     )

@@ -1,11 +1,25 @@
-import React, {forwardRef} from 'react';
+import React, { forwardRef } from 'react';
 
 import './MobMenu.css'
 
-const MobMenu = forwardRef((props,ref) => {
+const nonVis = {
+    visibility: 'hidden',
+    opacity: '0',
+    transition: 'visibility 0s linear 300ms, opacity 300ms'
+}
+
+const vis = {
+    visibility: 'visible',
+    opacity: '1',
+    transition: 'visibility 0s linear 0s, opacity 300ms'
+}
+
+const MobMenu = forwardRef((props, ref) => {
+
+
 
     return (
-        <div ref={ref} className='mobMenu'>
+        <div style={(props.visible === 'hidden' ? nonVis : vis)} ref={ref} className='mobMenu'>
             <ul >
                 <li>Features</li>
                 <li>Pricing</li>
