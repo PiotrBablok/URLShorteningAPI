@@ -22,21 +22,23 @@ function Title() {
 
     function mergeUrls(e) {
         e.preventDefault();
-        setCurrentUrl((prevState) => {
-            return [...prevState, newUrl]
-        })
-        setNewUrl('');
-
-        fetch(`https://api.shrtco.de/v2/shorten?url=${newUrl}`)
-            .then(data => data.json())
-            .then(short => {
-                if(short.result['short_link2'] !== undefined){
-                    setShortedUrls((prevState) => {
-                        return [...prevState,short.result['short_link2']]
-                    })
-                }  
+        if (newUrl !== '') {
+            setCurrentUrl((prevState) => {
+                return [...prevState, newUrl]
             })
-            .catch(err => console.log('Wyjebało się...'))
+            setNewUrl('');
+
+            fetch(`https://api.shrtco.de/v2/shorten?url=${newUrl}`)
+                .then(data => data.json())
+                .then(short => {
+                    if (short.result['short_link2'] !== undefined) {
+                        setShortedUrls((prevState) => {
+                            return [...prevState, short.result['short_link2']]
+                        })
+                    }
+                })
+                .catch(err => console.log('Nie odebrano...'))
+        }
     }
 
     function getUrl(e) {
@@ -49,7 +51,7 @@ function Title() {
             <SiteInfo />
             <GetStartedBtn />
             <ShortenInput liftData={getUrl} submitUrl={mergeUrls} clearInput={newUrl} />
-            <FullInfo standart={currentUrl} short={shortedUrls}/>
+            <FullInfo standart={currentUrl} short={shortedUrls} />
             <Back />
         </main>
     )
