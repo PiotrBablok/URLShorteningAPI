@@ -2,12 +2,12 @@ import React from "react";
 
 import './ShortenInput.css'
 
-function ShortenInput() {
+function ShortenInput(props) {
     return (
         <div className='shorten'>
-            <form>
-                <input placeholder='Shorten a link here...' type='text' />
-                <button>Shorten It!</button>
+            <form onSubmit={props.submitUrl}>
+                <input placeholder='Shorten a link here...' value={props.clearInput} onChange={props.liftData} type='text' />
+                <button type='submit'>Shorten It!</button>
             </form>
         </div>
     )

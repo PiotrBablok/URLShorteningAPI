@@ -5,10 +5,15 @@ import './FullInfo.css'
 import Brand from '../../../images/icon-brand-recognition.svg'
 import Detailed from '../../../images/icon-detailed-records.svg'
 import Fully from '../../../images/icon-fully-customizable.svg'
+import LinkLIst from "./LinkLIst";
 
-function FullInfo() {
+function FullInfo(props) {
+
+    
+
     return (
         <div className='fullInfo'>
+            <LinkLIst links={props}/>
             <h3>Adanced Statistics</h3>
             <p>Track how your links are performing across the web with our advanced statistics dashboard</p>
 

@@ -16,6 +16,20 @@ header {
     background-position: 1rem;
 }
 
+@media only screen and (min-width: 411px) {
+    .siteNav {
+        background-size: 500px auto;
+        background-position: center;
+    }
+}
+
+/* @media only screen and (min-width: 531px) {
+    .siteNav {
+        background-size: 500px auto;
+        background-position: center;
+    }
+} */
+
 .logo {
     margin-top: 1.5rem;
     margin-left: 1rem;
