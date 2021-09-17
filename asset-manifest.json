@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/URLShorteningAPI/static/css/main.c093c66e.chunk.css",
-    "main.js": "/URLShorteningAPI/static/js/main.eccf22ef.chunk.js",
-    "main.js.map": "/URLShorteningAPI/static/js/main.eccf22ef.chunk.js.map",
+    "main.js": "/URLShorteningAPI/static/js/main.bac1b665.chunk.js",
+    "main.js.map": "/URLShorteningAPI/static/js/main.bac1b665.chunk.js.map",
     "runtime-main.js": "/URLShorteningAPI/static/js/runtime-main.06a35e48.js",
     "runtime-main.js.map": "/URLShorteningAPI/static/js/runtime-main.06a35e48.js.map",
     "static/js/2.016d29fc.chunk.js": "/URLShorteningAPI/static/js/2.016d29fc.chunk.js",
@@ -27,6 +27,6 @@
     "static/js/runtime-main.06a35e48.js",
     "static/js/2.016d29fc.chunk.js",
     "static/css/main.c093c66e.chunk.css",
-    "static/js/main.eccf22ef.chunk.js"
+    "static/js/main.bac1b665.chunk.js"
   ]
 }
