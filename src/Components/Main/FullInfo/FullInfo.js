@@ -8,12 +8,9 @@ import Fully from '../../../images/icon-fully-customizable.svg'
 import LinkLIst from "./LinkLIst";
 
 function FullInfo(props) {
-
-    
-
     return (
         <div className='fullInfo'>
-            <LinkLIst links={props}/>
+            <LinkLIst links={props.passData}/>
             <h3>Adanced Statistics</h3>
             <p>Track how your links are performing across the web with our advanced statistics dashboard</p>
 

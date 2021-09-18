@@ -9,36 +9,36 @@ import Back from './Back/Back';
 
 import './Main.css'
 
-const LINKS = [];
-const SHORTED_LINKS = [];
+const LINKS = [
+    {
+        long: 'www.test.pl',
+        shorten: 'www.test.pl'
+    }];
+
 
 function Title() {
 
     const [newUrl, setNewUrl] = useState('');
-
     const [currentUrl, setCurrentUrl] = useState(LINKS);
-
-    const [shortedUrls, setShortedUrls] = useState(SHORTED_LINKS)
 
     function mergeUrls(e) {
         e.preventDefault();
         if (newUrl !== '') {
-            setCurrentUrl((prevState) => {
-                return [...prevState, newUrl]
-            })
-            setNewUrl('');
-
             fetch(`https://api.shrtco.de/v2/shorten?url=${newUrl}`)
                 .then(data => data.json())
                 .then(short => {
-                    if (short.result['short_link2'] !== undefined) {
-                        setShortedUrls((prevState) => {
-                            return [...prevState, short.result['short_link2']]
+                    if (short.result['full_short_link2'] !== undefined) {
+                        setCurrentUrl((prevState) => {
+                            return [...prevState, {
+                                long: short.result['original_link'],
+                                shorten: short.result['full_short_link2']
+                            }]
                         })
                     }
                 })
-                .catch(err => console.log('Nie odebrano...'))
+                .catch(err => { console.log(err) })
         }
+        setNewUrl('');
     }
 
     function getUrl(e) {
@@ -51,7 +51,7 @@ function Title() {
             <SiteInfo />
             <GetStartedBtn />
             <ShortenInput liftData={getUrl} submitUrl={mergeUrls} clearInput={newUrl} />
-            <FullInfo standart={currentUrl} short={shortedUrls} />
+            <FullInfo passData={currentUrl} />
             <Back />
         </main>
     )
