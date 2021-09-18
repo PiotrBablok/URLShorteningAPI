@@ -9,12 +9,7 @@ import Back from './Back/Back';
 
 import './Main.css'
 
-const LINKS = [
-    {
-        long: 'www.test.pl',
-        shorten: 'www.test.pl'
-    }];
-
+const LINKS = [];
 
 function Title() {
 
