@@ -12,3 +12,7 @@
 .buttonCopy:hover {
     background-color: hsl(180, 66%, 44%);
 }
+
+.buttonCopy:active {
+    box-shadow: inset 0px 0px 50px -2px hsl(180, 66%, 49%);
+}
