@@ -1,20 +1,25 @@
 import React from "react";
 
+import CopyBtn from "./CopyBtn";
+
 import './LinkLIst.css'
 
-function LinkLIst(props) {
+const LinkLIst = (props) => {
+
     return (
         <div className='linksHolder' >
             {props.links.map(element => {
                 return (<div className='linksBlock'>
-                    <p className='link linkBorder linksAdjust'>{element.long}</p>
-                    <a className='link linksAdjust' target='_blank' rel="noreferrer" href={`${element.shorten}`}>
+                    <p className='pLink'>{element.long}</p>
+                    <div className='hr' />
+                    <a className='aLink' target='_blank' rel="noreferrer" href={`${element.shorten}`}>
                         {element.shorten}
                     </a>
+                    <CopyBtn copyLink={element.shorten}/>
                 </div>)
             })}
         </div>
     )
-}
+};
 
 export default LinkLIst;

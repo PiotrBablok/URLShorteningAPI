@@ -1,35 +1,34 @@
 .linksHolder {
-width: 15rem;
+    width: 15rem;
+    height: auto;
 }
 
 .linksBlock {
-    display: grid;
-    grid-template-rows: 2rem auto;
-    grid-template-columns: 100%;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 8rem;
+    height: auto;
     background-color: white;
-    border-radius: 15px;
+    border-radius: 5px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
-.linksBlock p {
-    width: 100%;
-    text-align: left;
-    padding-left: 1rem;
-}
-
-.linksBlock a {
-    width: 100%;
-    text-align: left;
-    padding-left: 1rem;
-}
-
-.link {
-    color: hsl(0, 0%, 0%) !important;
+.pLink {
+    color: hsl(0, 0%, 0%);
+    width: auto;
     font-size: 1rem !important;
 }
 
-.linkBorder {
-    border-bottom: 2px solid red;
+.hr {
+    width: 100%;
+    background-color: hsl(0, 0%, 88%);
+}
+
+.aLink {
+    text-align: center;
+    padding-top: 5px;
+    color: hsl(180, 66%, 49%);
+    width: auto;
 }
