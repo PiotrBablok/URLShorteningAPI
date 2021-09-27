@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import Headline from "./Headline/Headline";
 import SiteInfo from "./SiteInfo/SiteInfo";
@@ -9,13 +9,15 @@ import Back from './Back/Back';
 
 import './Main.css'
 
-const LINKS = [];
-
 function Title() {
 
     const [newUrl, setNewUrl] = useState('');
-    const [currentUrl, setCurrentUrl] = useState(LINKS);
+    const [currentUrl, setCurrentUrl] = useState(() => {
+        const localData = sessionStorage.getItem('linkData');
+        return localData ? JSON.parse(localData) : [];
+    });
 
+    //Fetch data frim API 
     function mergeUrls(e) {
         e.preventDefault();
         if (newUrl !== '') {
@@ -36,9 +38,14 @@ function Title() {
         setNewUrl('');
     }
 
+    //Listens for user input
     function getUrl(e) {
         setNewUrl(e.target.value);
     }
+
+    useEffect(() => {
+        sessionStorage.setItem('linkData',  JSON.stringify(currentUrl))
+    }, [currentUrl]);
 
     return (
         <main className='main'>

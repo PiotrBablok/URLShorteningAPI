@@ -8,8 +8,6 @@ import Fully from '../../../images/icon-fully-customizable.svg'
 import LinkLIst from "./LinkLIst";
 
 function FullInfo(props) {
-
-
     return (
         <div className='fullInfo'>
             <LinkLIst  links={props.passData} />
