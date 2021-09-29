@@ -8,27 +8,13 @@ header {
     display: grid;
     width: 100%;
     height: 25rem;
-    grid-template-columns: repeat(2,minmax(0,1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     grid-template-rows: 3.5rem 1fr;
     background-image: url(../../images/illustration-working.svg);
     background-repeat: no-repeat;
     background-size: 380px auto;
-    background-position: 1rem;
+    background-position: center;
 }
-
-@media only screen and (min-width: 411px) {
-    .siteNav {
-        background-size: 500px auto;
-        background-position: center;
-    }
-}
-
-/* @media only screen and (min-width: 531px) {
-    .siteNav {
-        background-size: 500px auto;
-        background-position: center;
-    }
-} */
 
 .logo {
     margin-top: 1.5rem;
@@ -51,3 +37,12 @@ header {
     transform: scale(1.2);
 }
 
+@media screen and (min-width: 56.25rem) {
+    .siteNav {
+        background-position: right;
+        background-size: 420px auto;
+    }
+    .menuBar {
+        display: none;
+    }
+}

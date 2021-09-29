@@ -8,7 +8,9 @@ function Back() {
     return (
         <div className='back'>
             <h3>Boost your links today</h3>
-            <GetStartedBtn />
+            <div className='startedBtn_position'>
+                <GetStartedBtn />
+            </div>
         </div>
     )
 }

@@ -16,18 +16,19 @@ const vis = {
 
 const MobMenu = forwardRef((props, ref) => {
     return (
-        <div style={(props.visible === 'hidden' ? nonVis : vis)} ref={ref} className='mobMenu'>
-            <ul >
-                <li>Features</li>
-                <li>Pricing</li>
-                <li>Resources</li>
-            </ul>
-            <div className='hr' />
-            <ul className='login'>
-                <li>Login</li>
-                <li className='sign'>Sign Up</li>
-            </ul>
-        </div>
+
+            <div style={(props.visible === 'hidden' ? nonVis : vis)} ref={ref} className='mobMenu'>
+                <ul >
+                    <li>Features</li>
+                    <li>Pricing</li>
+                    <li>Resources</li>
+                </ul>
+                <div className='hr' />
+                <ul className='login'>
+                    <li>Login</li>
+                    <li className='sign'>Sign Up</li>
+                </ul>
+            </div>
     )
 })
 

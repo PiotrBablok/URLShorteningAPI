@@ -4,7 +4,7 @@ import './Headline.css'
 
 function Headline() {
     return (
-        <div className='header'>
+        <div className='head'>
             <h2>More than just shorter links</h2>
         </div>
     )

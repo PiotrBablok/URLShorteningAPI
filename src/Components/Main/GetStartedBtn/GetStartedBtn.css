@@ -1,15 +1,15 @@
-.mainButton { 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   }
-   
-   .mainButton button {
-     color: white;
-     font-weight: 700;
-     background-color: hsl(180, 66%, 49%);
-     width: 9rem;
-     height: 2.5rem;
-     border: none;
-     border-radius: 2rem;
-   }
+.mainButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainButton button {
+  color: white;
+  font-weight: 700;
+  background-color: hsl(180, 66%, 49%);
+  width: 9rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 2rem;
+}

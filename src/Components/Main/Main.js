@@ -16,11 +16,13 @@ function Title() {
         const localData = sessionStorage.getItem('linkData');
         return localData ? JSON.parse(localData) : [];
     });
+    const [alertStatus, setAlertStatus] = useState(false);
 
     //Fetch data frim API 
     function mergeUrls(e) {
         e.preventDefault();
         if (newUrl !== '') {
+            setAlertStatus(false);
             fetch(`https://api.shrtco.de/v2/shorten?url=${newUrl}`)
                 .then(data => data.json())
                 .then(short => {
@@ -34,6 +36,8 @@ function Title() {
                     }
                 })
                 .catch(err => { console.log(err) })
+        } else {
+            setAlertStatus(true);
         }
         setNewUrl('');
     }
@@ -43,16 +47,19 @@ function Title() {
         setNewUrl(e.target.value);
     }
 
+    //Save the generated links to sessionStorage
     useEffect(() => {
-        sessionStorage.setItem('linkData',  JSON.stringify(currentUrl))
+        sessionStorage.setItem('linkData', JSON.stringify(currentUrl))
     }, [currentUrl]);
 
     return (
         <main className='main'>
             <Headline />
             <SiteInfo />
-            <GetStartedBtn />
-            <ShortenInput liftData={getUrl} submitUrl={mergeUrls} clearInput={newUrl} />
+            <div className='btn_position'>
+                <GetStartedBtn />
+            </div>
+            <ShortenInput liftData={getUrl} alert={alertStatus} submitUrl={mergeUrls} clearInput={newUrl} />
             <FullInfo passData={currentUrl} />
             <Back />
         </main>

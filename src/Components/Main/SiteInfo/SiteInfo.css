@@ -1,8 +1,10 @@
 .siteInfo {
+    position: relative;
     margin-top: 1rem;
     display: flex;
     justify-content: center;
     margin-bottom: 2rem;
+    width: 100%;
 }
 
 .siteInfo p {
@@ -11,3 +13,16 @@
     width: 15rem;
     text-align: center;
 }
+
+@media screen and (min-width: 56.25rem) {
+    .siteInfo {
+        justify-content: flex-start;
+        padding: 0 0 0 5rem;
+    }
+
+    .siteInfo p {
+        font-size: 1rem;
+        width: 25rem;
+        text-align: left;
+    }
+  }

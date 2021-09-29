@@ -9,7 +9,7 @@ const LinkLIst = (props) => {
     return (
         <div className='linksHolder' >
             {props.links.map(element => {
-                return (<div className='linksBlock'>
+                return (<div key={element.long} className='linksBlock'>
                     <p className='pLink linksFit'>{element.long}</p>
                     <div className='hr' />
                     <a className='aLink linksFit' target='_blank' rel="noreferrer" href={`${element.shorten}`}>

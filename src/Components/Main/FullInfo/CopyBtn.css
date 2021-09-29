@@ -16,3 +16,9 @@
 .buttonCopy:active {
     box-shadow: inset 0px 0px 50px -2px hsl(180, 66%, 49%);
 }
+
+@media screen and (min-width: 56.25rem) {
+    .buttonCopy {
+        margin: 0 1rem 0 0;
+    }
+}
