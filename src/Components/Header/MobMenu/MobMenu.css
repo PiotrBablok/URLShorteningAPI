@@ -37,3 +37,9 @@
     background-color: hsl(180, 66%, 49%);
     border-radius: 2rem;
 }
+
+@media screen and (min-width: 56.31rem) {
+    .mobMenu {
+        display: none;
+    }
+}

@@ -41,7 +41,7 @@
     padding: 0 5px 0 5px;
 }
 
-@media screen and (min-width: 56.25rem) {
+@media screen and (min-width: 56.31rem) {
     .linksHolder {
         width: 85vw;
     }

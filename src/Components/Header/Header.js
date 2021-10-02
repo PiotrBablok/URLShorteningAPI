@@ -3,6 +3,7 @@ import React, { useState, useRef, useEffect } from "react";
 import logo from '../../images/logo.svg'
 import menu from '../../images/bars-solid-menu.svg'
 import MobMenu from "./MobMenu/MobMenu";
+import DesktopMenu from "./DesktopMenu/DesktopMenu";
 
 
 import './Header.css'
@@ -36,6 +37,7 @@ function Header() {
         <header>
             <nav className='siteNav'>
                 <img className='logo' src={logo} alt='logo' />
+                <DesktopMenu />
                 <img ref={menuBar} className='menuBar' onClick={showMenu} src={menu} alt='menu' />
             </nav>
             <MobMenu visible={dropMenuState} ref={refMenu}/> 

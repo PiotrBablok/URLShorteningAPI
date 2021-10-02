@@ -6,17 +6,19 @@
   position: relative;
 }
 
-@media screen and (min-width: 56.25rem) {
+.btn_position {
+  width: 80vw;
+}
+
+@media screen and (min-width: 56.31rem) {
   .main {
     top: -20rem;
     margin-bottom: -20rem;
   }
 
   .btn_position {
-    width: 100vw;
     display: flex;
     justify-self: flex-start;
     align-items: flex-start;
-    padding: 0 0 0 5rem;
   }
 }

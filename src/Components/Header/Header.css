@@ -1,14 +1,14 @@
 header {
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 90vw;
 }
 
 .siteNav {
     display: grid;
-    width: 100%;
+    width: 80vw;
     height: 25rem;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: 7rem auto auto auto auto auto;
     grid-template-rows: 3.5rem 1fr;
     background-image: url(../../images/illustration-working.svg);
     background-repeat: no-repeat;
@@ -17,14 +17,13 @@ header {
 }
 
 .logo {
-    margin-top: 1.5rem;
-    margin-left: 1rem;
+    margin-top: 1.3rem;
     width: 80px;
     height: 20px;
 }
 
 .menuBar {
-    grid-area: 1/2/2/3;
+    grid-area: 1/6/2/7;
     color: rgb(134, 134, 134);
     justify-self: flex-end;
     margin-top: 1.5rem;
@@ -37,7 +36,7 @@ header {
     transform: scale(1.2);
 }
 
-@media screen and (min-width: 56.25rem) {
+@media screen and (min-width: 56.31rem) {
     .siteNav {
         background-position: right;
         background-size: 420px auto;

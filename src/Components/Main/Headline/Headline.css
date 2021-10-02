@@ -1,7 +1,7 @@
 .head {
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 80vw;
 }
 
 .head h2 {
@@ -11,10 +11,9 @@
     color: hsl(257, 27%, 26%);
 }
 
-@media screen and (min-width: 56.25rem) {
+@media screen and (min-width: 56.31rem) {
     .head {
         justify-content: flex-start;
-        padding: 0 0 0 5rem;
     }
 
     .head h2 {

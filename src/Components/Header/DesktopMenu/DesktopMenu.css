@@ -1,0 +1,45 @@
+.desktopMenu {
+    grid-area: 1/2/2/7;
+    display: flex;
+    align-items: center;
+}
+
+.desktopMenu_pages li {
+    display: inline;
+    padding-left: 3rem;
+    font-size: 0.8rem;
+    color: grey;
+    height: 2rem;
+    line-height: 2rem;
+}
+
+.desktopMenu_login {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 3rem;
+}
+
+.desktopMenu_login li {
+    display: inline;
+    font-size: 0.8rem;
+    color: grey;
+    margin-right: 3rem;
+}
+
+.desktopSign {
+    background-color: hsl(180, 66%, 49%);
+    border-radius: 3rem;
+    width: 6rem;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    color: white !important;
+}
+
+@media screen and (max-width: 56.25rem) {
+    .desktopMenu {
+        display: none;
+    }
+}
