@@ -20,7 +20,7 @@
   margin-top: 0.8rem;
   font-size: 0.7rem;
   text-align: center;
-  color: hsl(0, 0%, 75%);
+  color: hsl(0, 0%, 59%);
 }
 
 .frame_position {
@@ -50,7 +50,11 @@
 }
 
 .frame p {
-  width: 12rem;
+  width: 80%;
+  margin-top: 0.8rem;
+  font-size: 0.7rem;
+  text-align: center;
+  color: hsl(0, 0%, 75%);
 }
 
 .picto {
@@ -87,7 +91,7 @@
     font-size: 1rem;
   }
   .frame_position {
-    width: 80vw;
+    width: 60vw;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -101,11 +105,11 @@
     top: 2rem;
   }
   .picto {
-    bottom: 15rem;
+    bottom: 12.5rem;
   }
   .vLine {
     height: 0;
-    width: 65vw;
-    bottom: 32rem;
+    width: 60vw;
+    bottom: 30rem;
   }
 }

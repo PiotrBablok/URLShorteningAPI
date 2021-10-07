@@ -37,7 +37,6 @@ footer ul {
 }
 
 footer li {
-    font-size: 1rem;
     color: grey;
     text-align: center;
     margin-top: 0.3rem;
@@ -70,11 +69,15 @@ footer button:hover {
       flex-direction: row;
       justify-content: space-between;
       align-items: flex-start;
-      width: 90vw;
+      width: 60vw;
     }
 
     footer h2 {
-        width: 10rem;
+        width: 5rem;
+    }
+
+    footer h4 {
+        font-size: 0.8rem;
     }
 
     .position {
@@ -87,7 +90,14 @@ footer button:hover {
         text-align: left;
     }
 
+    footer button {
+        font-size: 0.8rem;
+    }
+
+    .social{
+        width: 6rem;
+    }
     .social img {
-        width: 1.5rem;
+        width: 1rem;
     }
   }

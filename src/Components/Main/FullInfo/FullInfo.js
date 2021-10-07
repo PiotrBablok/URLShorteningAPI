@@ -20,7 +20,7 @@ function FullInfo(props) {
                         <img src={Brand} alt='chart' />
                     </div>
                     <h4>Brand Recognition</h4>
-                    <p className='fullInfo_p'>Boost your brand recognition with each click. Generic links don't mean a thing. Branded
+                    <p>Boost your brand recognition with each click. Generic links don't mean a thing. Branded
                         links help instil confidence in your content.</p>
                 </div>
                 <div className='frame'>
@@ -28,7 +28,7 @@ function FullInfo(props) {
                         <img src={Detailed} alt='pointer' />
                     </div>
                     <h4>Detailed Records</h4>
-                    <p className='fullInfo_p'>Gain insights into who is clicking your links. Knowing when and where people engage
+                    <p>Gain insights into who is clicking your links. Knowing when and where people engage
                         with your content helps inform better decision.</p>
                 </div>
                 <div className='frame'>
@@ -36,7 +36,7 @@ function FullInfo(props) {
                         <img src={Fully} alt='burhses' />
                     </div>
                     <h4>Fully Customizable</h4>
-                    <p className='fullInfo_p'>Improve brand awareness and content discoverability trough customizable links,
+                    <p>Improve brand awareness and content discoverability trough customizable links,
                         superchaging audience engagment.</p>
                 </div>
             </div>

@@ -1,24 +1,24 @@
 .head {
     display: flex;
     justify-content: center;
-    width: 80vw;
+    width: 100vw;
+    max-width: 100%;
 }
 
 .head h2 {
     font-size: 2rem;
     width: 15rem;
-    text-align: center;
     color: hsl(257, 27%, 26%);
 }
 
 @media screen and (min-width: 56.31rem) {
     .head {
         justify-content: flex-start;
+        width: 60vw;
     }
 
     .head h2 {
         font-size: 3rem;
         width: 25rem;
-        text-align: left;
     }
 }

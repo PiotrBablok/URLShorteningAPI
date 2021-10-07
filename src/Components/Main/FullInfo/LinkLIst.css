@@ -43,7 +43,7 @@
 
 @media screen and (min-width: 56.31rem) {
     .linksHolder {
-        width: 85vw;
+        width: 60vw;
     }
     .linksBlock {
         flex-direction: row;

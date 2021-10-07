@@ -11,14 +11,22 @@ import './Main.css'
 
 function Title() {
 
-    const [newUrl, setNewUrl] = useState('');
-    const [currentUrl, setCurrentUrl] = useState(() => {
+    //Load shorted links from localstore
+    function storeData() {
         const localData = sessionStorage.getItem('linkData');
         return localData ? JSON.parse(localData) : [];
-    });
+    }
+
+    const [newUrl, setNewUrl] = useState('');
+    const [currentUrl, setCurrentUrl] = useState(storeData());
     const [alertStatus, setAlertStatus] = useState(false);
 
-    //Fetch data frim API 
+     //Save the generated links to sessionStorage
+     useEffect(() => {
+        sessionStorage.setItem('linkData', JSON.stringify(currentUrl))
+    }, [currentUrl]);
+
+    //Fetch data from API 
     function mergeUrls(e) {
         e.preventDefault();
         if (newUrl !== '') {
@@ -35,7 +43,7 @@ function Title() {
                         })
                     }
                 })
-                .catch(err => { console.log(err) })
+                .catch(err => console.log(err))
         } else {
             setAlertStatus(true);
         }
@@ -46,11 +54,6 @@ function Title() {
     function getUrl(e) {
         setNewUrl(e.target.value);
     }
-
-    //Save the generated links to sessionStorage
-    useEffect(() => {
-        sessionStorage.setItem('linkData', JSON.stringify(currentUrl))
-    }, [currentUrl]);
 
     return (
         <main className='main'>

@@ -7,7 +7,8 @@
 }
 
 .btn_position {
-  width: 80vw;
+  width: 100vw;
+  max-width: 100%;
 }
 
 @media screen and (min-width: 56.31rem) {
@@ -20,5 +21,6 @@
     display: flex;
     justify-self: flex-start;
     align-items: flex-start;
+    width: 60vw;
   }
 }
