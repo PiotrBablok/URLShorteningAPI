@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/URLShorteningAPI/static/css/main.1a8eaa2f.chunk.css",
+    "main.css": "/URLShorteningAPI/static/css/main.00833f3a.chunk.css",
     "main.js": "/URLShorteningAPI/static/js/main.9242506b.chunk.js",
     "main.js.map": "/URLShorteningAPI/static/js/main.9242506b.chunk.js.map",
     "runtime-main.js": "/URLShorteningAPI/static/js/runtime-main.06a35e48.js",
@@ -8,7 +8,7 @@
     "static/js/2.d3fd0074.chunk.js": "/URLShorteningAPI/static/js/2.d3fd0074.chunk.js",
     "static/js/2.d3fd0074.chunk.js.map": "/URLShorteningAPI/static/js/2.d3fd0074.chunk.js.map",
     "index.html": "/URLShorteningAPI/index.html",
-    "static/css/main.1a8eaa2f.chunk.css.map": "/URLShorteningAPI/static/css/main.1a8eaa2f.chunk.css.map",
+    "static/css/main.00833f3a.chunk.css.map": "/URLShorteningAPI/static/css/main.00833f3a.chunk.css.map",
     "static/js/2.d3fd0074.chunk.js.LICENSE.txt": "/URLShorteningAPI/static/js/2.d3fd0074.chunk.js.LICENSE.txt",
     "static/media/bars-solid-menu.e8db7520.svg": "/URLShorteningAPI/static/media/bars-solid-menu.e8db7520.svg",
     "static/media/Back.css": "/URLShorteningAPI/static/media/bg-boost-mobile.4b04bd89.svg",
@@ -26,7 +26,7 @@
   "entrypoints": [
     "static/js/runtime-main.06a35e48.js",
     "static/js/2.d3fd0074.chunk.js",
-    "static/css/main.1a8eaa2f.chunk.css",
+    "static/css/main.00833f3a.chunk.css",
     "static/js/main.9242506b.chunk.js"
   ]
 }
