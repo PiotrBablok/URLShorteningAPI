@@ -3,6 +3,10 @@ header {
     justify-content: center;
     width: 100vw;
     max-width: 100%;
+    background-image: url(../../images/illustration-working.svg);
+    background-repeat: no-repeat;
+    background-size: 380px auto;
+    background-position: center;
 }
 
 .siteNav {
@@ -11,10 +15,6 @@ header {
     height: 25rem;
     grid-template-columns: 7rem auto auto auto auto auto;
     grid-template-rows: 3.5rem 1fr;
-    background-image: url(../../images/illustration-working.svg);
-    background-repeat: no-repeat;
-    background-size: 380px auto;
-    background-position: center;
 }
 
 .logo {
@@ -38,15 +38,38 @@ header {
 }
 
 @media screen and (min-width: 56.31rem) {
-
     header {
-        width: 60vw;
+        background-position: 80% 3.75rem;
+        background-size: 30rem auto;
     }
     .siteNav {
-        background-position: 23.75rem 3.75rem;
-        background-size: 30rem auto;
+        width: 60vw;
     }
     .menuBar {
         display: none;
+    }
+}
+
+@media screen and (min-width: 85rem) {
+    header {
+        background-position: 80% 3.75rem;
+    }
+}
+
+@media screen and (min-width: 100rem) {
+    header {
+        background-position: 70% 3.75rem;
+    }
+}
+
+@media screen and (min-width: 119rem) {
+    header {
+        background-position: 60% 3.75rem;
+    }
+}
+
+@media screen and (min-width: 144rem) {
+    header {
+        background-position: 50% 3.75rem;
     }
 }
